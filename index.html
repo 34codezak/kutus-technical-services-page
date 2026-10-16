@@ -2,50 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>KTS | Kutus Technical Services</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Kutus Technical Services provides digital, IT, electronics, electrical, security and installation solutions.">
+          content="Kutus Technical Services provides mobile IT, software, CCTV, networking, electronics, TV mounting and document services in Kutus, Kirinyaga and surrounding areas.">
+
+    <meta name="keywords"
+          content="Kutus Technical Services, IT support Kutus, CCTV Kutus, laptop repair Kutus, WiFi installation Kutus, website development Kirinyaga, TV mounting Kutus">
+
+    <meta name="theme-color" content="#080808">
+
+    <title>Kutus Technical Services | One Team. Every Technical Problem.</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 
     <!-- W3.CSS -->
     <link rel="stylesheet"
           href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVIGATION ================= -->
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
 
 <nav class="site-nav" id="navbar">
 
     <div class="nav-container">
 
-        <!-- <a href="#home" class="brand">
-            <span class="brand-mark">K</span>
-
-            
-        </a> -->
-
         <a href="#home" class="brand">
-            <img src="./assets/kts-logo.png" alt="KTS - Kutus Technical Services">
-            <span>
-                <strong>KTS</strong>
-                <small>Kutus Technical Services</small>
-            </span>
+            <img src="assets/kts-logo.png"
+                 alt="Kutus Technical Services logo">
         </a>
 
-        <div class="desktop-nav">
+        <!-- Desktop navigation -->
+        <div class="desktop-nav" id="mainNav">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#about">About</a>
@@ -53,61 +54,75 @@
             <a href="#contact" class="nav-cta">Get a Quote</a>
         </div>
 
-        <button class="mobile-menu-btn"
-                onclick="toggleMenu()"
-                aria-label="Open navigation">
-            ☰
-        </button>
+        <!-- MOBILE MENU CONTROL -->
+        <input
+            type="checkbox"
+            id="mobileMenuToggle"
+            class="mobile-menu-checkbox"
+        >
 
-    </div>
+        <label
+            for="mobileMenuToggle"
+            class="menu-toggle"
+            aria-label="Open navigation menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </label>
+
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu" id="mobileMenu">
+        
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#process">How We Work</a>
+            <a href="#contact">Get a Quote</a>
+        
+        </div>
 
 </nav>
 
 
-<!-- ================= MOBILE MENU ================= -->
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-<div id="mobileMenu" class="mobile-menu">
-
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#services" onclick="closeMenu()">Services</a>
-    <a href="#about" onclick="closeMenu()">About</a>
-    <a href="#process" onclick="closeMenu()">How We Work</a>
-    <a href="#contact" onclick="closeMenu()">Get a Quote</a>
-
-</div>
-
-
-<!-- ================= HERO ================= -->
-
-<section id="home" class="hero">
+<header class="hero" id="home">
 
     <div class="hero-overlay"></div>
 
-    <div class="w3-content hero-content">
+    <div class="hero-content">
 
         <div class="hero-badge">
-            KUTUS • KIRINYAGA • KENYA
+            MOBILE TECHNICAL SERVICES • KUTUS
         </div>
 
         <h1>
-            Technical solutions
-            <span>that work.</span>
+            One Team.<br>
+            <span>Every Technical Problem.</span>
         </h1>
 
-        <p class="hero-text">
-            KTS provides practical digital, IT, electronics,
-            electrical, security and installation services for
-            businesses, institutions and individuals.
+        <p class="hero-description">
+            We come to you with practical, reliable technical solutions
+            for homes, businesses, schools and organisations across
+            Kutus and surrounding areas.
         </p>
 
-        <div class="hero-buttons">
+        <div class="hero-actions">
 
-            <a href="#services" class="primary-btn">
-                Explore Our Services
+            <a href="#contact" class="btn btn-primary">
+                Request a Service
             </a>
 
-            <a href="#contact" class="secondary-btn">
-                Request a Quote
+            <a href="https://wa.me/254753563851"
+               class="btn btn-outline"
+               target="_blank"
+               rel="noopener">
+                WhatsApp Us
             </a>
 
         </div>
@@ -115,18 +130,60 @@
         <div class="hero-trust">
 
             <div>
-                <strong>04</strong>
-                <span>Service Departments</span>
-            </div>
-
-            <div>
                 <strong>01</strong>
-                <span>Technical Team</span>
+                <span>Mobile Service</span>
             </div>
 
             <div>
-                <strong>∞</strong>
-                <span>Problems to Solve</span>
+                <strong>02</strong>
+                <span>Multi-skilled Team</span>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <span>Transparent Pricing</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     INTRO
+========================================================= -->
+
+<section class="intro-section">
+
+    <div class="container">
+
+        <div class="section-label">
+            WHY KTS
+        </div>
+
+        <div class="intro-grid">
+
+            <div>
+                <h2>
+                    Technical problems shouldn't require
+                    <span>five different technicians.</span>
+                </h2>
+            </div>
+
+            <div>
+                <p>
+                    Kutus Technical Services is a mobile, multi-skilled
+                    technical team built to solve different technical
+                    problems in one visit.
+                </p>
+
+                <p>
+                    From computers and Wi-Fi to CCTV, websites,
+                    business records, electronics and TV mounting,
+                    we bring the right expertise directly to you.
+                </p>
             </div>
 
         </div>
@@ -136,143 +193,186 @@
 </section>
 
 
-<!-- ================= SERVICES ================= -->
+<!-- =========================================================
+     SERVICES
+========================================================= -->
 
-<section id="services" class="section">
+<section class="section services-section" id="services">
 
-    <div class="w3-content">
+    <div class="container">
 
         <div class="section-heading">
 
-            <span>WHAT WE DO</span>
+            <div>
+                <div class="section-label">
+                    WHAT WE DO
+                </div>
 
-            <h2>
-                One team.
-                <br>
-                Multiple technical capabilities.
-            </h2>
+                <h2>
+                    Technical solutions<br>
+                    <span>that come to you.</span>
+                </h2>
+            </div>
 
             <p>
-                We combine digital expertise with hands-on technical
-                skills to solve problems both on-screen and on-site.
+                Our services are organised around the real technical
+                problems faced by households, businesses, schools and
+                organisations in Kutus.
             </p>
 
         </div>
 
 
-        <div class="w3-row-padding">
+        <div class="services-grid">
 
-            <!-- 01 -->
+            <!-- Service 1 -->
+            <article class="service-card">
 
-            <div class="w3-quarter service-column">
+                <div class="service-number">01</div>
 
-                <div class="service-card">
+                <div class="service-icon">⌘</div>
 
-                    <div class="service-number">01</div>
+                <h3>Digital & Software</h3>
 
-                    <h3>Digital & Software</h3>
+                <p>
+                    Websites, Python tools, APIs, automation,
+                    data analysis and practical business systems.
+                </p>
 
-                    <p>
-                        Digital systems that help businesses
-                        operate, automate and grow.
-                    </p>
+                <ul>
+                    <li>Business websites</li>
+                    <li>Automation</li>
+                    <li>APIs & software</li>
+                    <li>Business systems</li>
+                    <li>Data analysis</li>
+                </ul>
 
-                    <ul>
-                        <li>Websites</li>
-                        <li>Python tools</li>
-                        <li>APIs</li>
-                        <li>Automation</li>
-                        <li>Data analysis</li>
-                        <li>Business systems</li>
-                    </ul>
-
-                </div>
-
-            </div>
+            </article>
 
 
-            <!-- 02 -->
+            <!-- Service 2 -->
+            <article class="service-card">
 
-            <div class="w3-quarter service-column">
+                <div class="service-number">02</div>
 
-                <div class="service-card">
+                <div class="service-icon">▣</div>
 
-                    <div class="service-number">02</div>
+                <h3>IT Support</h3>
 
-                    <h3>IT Support</h3>
+                <p>
+                    Computer troubleshooting and technical support
+                    for homes, offices and institutions.
+                </p>
 
-                    <p>
-                        Reliable technical support for computers,
-                        software and networks.
-                    </p>
+                <ul>
+                    <li>Laptop & PC tune-ups</li>
+                    <li>Windows / Linux setup</li>
+                    <li>Software installation</li>
+                    <li>Hardware diagnosis</li>
+                    <li>Networking & Wi-Fi</li>
+                </ul>
 
-                    <ul>
-                        <li>Windows & Linux</li>
-                        <li>Hardware diagnosis</li>
-                        <li>Software installation</li>
-                        <li>Networking</li>
-                        <li>Troubleshooting</li>
-                    </ul>
-
-                </div>
-
-            </div>
+            </article>
 
 
-            <!-- 03 -->
+            <!-- Service 3 -->
+            <article class="service-card">
 
-            <div class="w3-quarter service-column">
+                <div class="service-number">03</div>
 
-                <div class="service-card">
+                <div class="service-icon">⚡</div>
 
-                    <div class="service-number">03</div>
+                <h3>Electronics & Electrical</h3>
 
-                    <h3>Electronics & Electrical</h3>
+                <p>
+                    Practical diagnosis, electronics repair and
+                    installation support.
+                </p>
 
-                    <p>
-                        Diagnosis, repair and installation of
-                        electronics and electrical systems.
-                    </p>
+                <ul>
+                    <li>Appliance diagnosis</li>
+                    <li>Electronics repair</li>
+                    <li>Low-voltage work</li>
+                    <li>Power supply diagnosis</li>
+                    <li>Electrical support</li>
+                </ul>
 
-                    <ul>
-                        <li>Appliance diagnosis</li>
-                        <li>Electronics repair</li>
-                        <li>Electrical services</li>
-                        <li>Installation</li>
-                        <li>Maintenance</li>
-                    </ul>
-
-                </div>
-
-            </div>
+            </article>
 
 
-            <!-- 04 -->
+            <!-- Service 4 -->
+            <article class="service-card">
 
-            <div class="w3-quarter service-column">
+                <div class="service-number">04</div>
 
-                <div class="service-card">
+                <div class="service-icon">◉</div>
 
-                    <div class="service-number">04</div>
+                <h3>Security & Installation</h3>
 
-                    <h3>Security & Installation</h3>
+                <p>
+                    Security and installation services designed
+                    around your property and connectivity needs.
+                </p>
 
-                    <p>
-                        Technology installations that improve
-                        security, connectivity and convenience.
-                    </p>
+                <ul>
+                    <li>CCTV installation</li>
+                    <li>Phone viewing setup</li>
+                    <li>TV mounting</li>
+                    <li>DStv / satellite installation</li>
+                    <li>Network cabling</li>
+                </ul>
 
-                    <ul>
-                        <li>CCTV installation</li>
-                        <li>TV mounting</li>
-                        <li>Network cabling</li>
-                        <li>Satellite/DStv</li>
-                        <li>System setup</li>
-                    </ul>
+            </article>
 
-                </div>
 
-            </div>
+            <!-- Service 5 -->
+            <article class="service-card">
+
+                <div class="service-number">05</div>
+
+                <div class="service-icon">✎</div>
+
+                <h3>Documents & Training</h3>
+
+                <p>
+                    Fast document support and digital skills
+                    assistance for students, professionals and teams.
+                </p>
+
+                <ul>
+                    <li>CV preparation</li>
+                    <li>PDF & image editing</li>
+                    <li>Typesetting</li>
+                    <li>Form assistance</li>
+                    <li>Digital skills coaching</li>
+                </ul>
+
+            </article>
+
+
+            <!-- Service 6 -->
+            <article class="service-card featured-service">
+
+                <div class="service-number">06</div>
+
+                <div class="service-icon">+</div>
+
+                <h3>Business Technology</h3>
+
+                <p>
+                    Practical technology that helps local businesses
+                    organise, operate and grow.
+                </p>
+
+                <ul>
+                    <li>Stock & sales records</li>
+                    <li>M-Pesa tracking</li>
+                    <li>WhatsApp Business setup</li>
+                    <li>Google Business Profile</li>
+                    <li>Automation & dashboards</li>
+                </ul>
+
+            </article>
 
         </div>
 
@@ -281,46 +381,182 @@
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- =========================================================
+     LAUNCH SERVICES
+========================================================= -->
 
-<section id="about" class="about-section">
+<section class="section launch-section">
 
-    <div class="w3-content">
+    <div class="container">
 
-        <div class="w3-row-padding">
+        <div class="launch-header">
 
-            <div class="w3-half about-heading">
-
-                <span class="eyebrow">ABOUT KTS</span>
+            <div>
+                <div class="section-label">
+                    LAUNCH MENU
+                </div>
 
                 <h2>
-                    Built around
-                    <span>technical skill.</span>
+                    Start with the problem<br>
+                    <span>you need solved.</span>
                 </h2>
+            </div>
+
+            <p>
+                Our initial service menu focuses on practical,
+                fast-delivery services that require little or no
+                equipment investment.
+            </p>
+
+        </div>
+
+
+        <div class="launch-list">
+
+            <div class="launch-item">
+                <span>01</span>
+                <div>
+                    <h3>Laptop & PC Tune-Up</h3>
+                    <p>Windows/Linux setup, software installation, slow-computer fixes and troubleshooting.</p>
+                </div>
+                <strong>KES 800 – 3,000</strong>
+            </div>
+
+            <div class="launch-item">
+                <span>02</span>
+                <div>
+                    <h3>Wi-Fi Fix & Setup</h3>
+                    <p>Router configuration, placement, password setup and coverage improvement.</p>
+                </div>
+                <strong>KES 1,500 – 5,000</strong>
+            </div>
+
+            <div class="launch-item">
+                <span>03</span>
+                <div>
+                    <h3>Business Records Starter</h3>
+                    <p>Stock, sales, expenses and M-Pesa tracking using practical spreadsheets and training.</p>
+                </div>
+                <strong>KES 3,000 – 15,000</strong>
+            </div>
+
+            <div class="launch-item">
+                <span>04</span>
+                <div>
+                    <h3>Business Online Starter</h3>
+                    <p>Google Business Profile, WhatsApp Business and a one-page website.</p>
+                </div>
+                <strong>KES 5,000 – 30,000</strong>
+            </div>
+
+            <div class="launch-item">
+                <span>05</span>
+                <div>
+                    <h3>Document & Student Services</h3>
+                    <p>CVs, PDF editing, image editing, form assistance and typesetting.</p>
+                </div>
+                <strong>KES 200 – 2,000</strong>
+            </div>
+
+            <div class="launch-item">
+                <span>06</span>
+                <div>
+                    <h3>TV & DStv Mounting</h3>
+                    <p>TV mounting and satellite/DStv installation labour.</p>
+                </div>
+                <strong>KES 1,000 – 3,500</strong>
+            </div>
+
+            <div class="launch-item">
+                <span>07</span>
+                <div>
+                    <h3>CCTV Starter Packages</h3>
+                    <p>Site survey, quotation, installation and phone viewing setup.</p>
+                </div>
+                <strong>KES 5,000 – 15,000+</strong>
+            </div>
+
+        </div>
+
+        <p class="pricing-note">
+            * Prices are indicative planning ranges and may vary according
+            to scope, materials, location and project requirements.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <div class="about-image-content">
+                    <span>BUILT IN KUTUS</span>
+                    <strong>ENGINEERED<br>FOR PEOPLE.</strong>
+                </div>
 
             </div>
 
 
-            <div class="w3-half about-text">
+            <div class="about-content">
+
+                <div class="section-label">
+                    ABOUT KTS
+                </div>
+
+                <h2>
+                    We don't wait for you<br>
+                    to find us.
+                    <span>We come to you.</span>
+                </h2>
 
                 <p>
-                    Kutus Technical Services is a multi-disciplinary
-                    technical services team focused on providing
-                    practical solutions to individuals, businesses
-                    and institutions.
+                    Kutus Technical Services is a five-person technical
+                    team combining software engineering, IT support,
+                    electrical engineering, construction engineering
+                    and training expertise.
                 </p>
 
                 <p>
-                    Our capabilities span software engineering,
-                    IT support, electronics, electrical services,
-                    security systems and technical installations.
+                    Our model is simple: bring several technical skills
+                    together so a customer can solve multiple problems
+                    without having to coordinate several separate
+                    technicians.
                 </p>
 
-                <p>
-                    Whether the problem is digital or physical,
-                    our goal is simple:
-                    <strong>understand it, solve it and deliver it properly.</strong>
-                </p>
+                <div class="about-points">
+
+                    <div>
+                        <strong>01</strong>
+                        <span>Mobile & on-site</span>
+                    </div>
+
+                    <div>
+                        <strong>02</strong>
+                        <span>Engineer-led</span>
+                    </div>
+
+                    <div>
+                        <strong>03</strong>
+                        <span>Transparent pricing</span>
+                    </div>
+
+                    <div>
+                        <strong>04</strong>
+                        <span>30-day workmanship guarantee</span>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -331,94 +567,76 @@
 </section>
 
 
-<!-- ================= WHY KTS ================= -->
+<!-- =========================================================
+     WHO WE SERVE
+========================================================= -->
 
-<section class="why-section">
+<section class="section clients-section">
 
-    <div class="w3-content">
+    <div class="container">
 
-        <div class="section-heading light-heading">
+        <div class="section-heading centered">
 
-            <span>WHY KTS</span>
+            <div class="section-label">
+                WHO WE SERVE
+            </div>
 
             <h2>
-                More than a service provider.
+                Built for the people<br>
+                <span>building Kutus.</span>
             </h2>
 
         </div>
 
 
-        <div class="w3-row-padding">
+        <div class="client-grid">
 
-            <div class="w3-quarter feature-column">
-
-                <div class="feature-card">
-
-                    <span>01</span>
-
-                    <h3>Multi-disciplinary</h3>
-
-                    <p>
-                        Software, IT, electronics, electrical
-                        and installation expertise in one team.
-                    </p>
-
-                </div>
-
+            <div class="client-card">
+                <span>01</span>
+                <h3>Small Businesses</h3>
+                <p>
+                    Shops, agrovets, hardware stores, salons and eateries.
+                </p>
             </div>
 
-
-            <div class="w3-quarter feature-column">
-
-                <div class="feature-card">
-
-                    <span>02</span>
-
-                    <h3>Mobile</h3>
-
-                    <p>
-                        We bring our technical services directly
-                        to your home, business or site.
-                    </p>
-
-                </div>
-
+            <div class="client-card">
+                <span>02</span>
+                <h3>Schools & Colleges</h3>
+                <p>
+                    Computer labs, fee tracking, CCTV and digital training.
+                </p>
             </div>
 
-
-            <div class="w3-quarter feature-column">
-
-                <div class="feature-card">
-
-                    <span>03</span>
-
-                    <h3>Practical</h3>
-
-                    <p>
-                        We focus on useful solutions to real
-                        technical and business problems.
-                    </p>
-
-                </div>
-
+            <div class="client-card">
+                <span>03</span>
+                <h3>SACCOs & Cooperatives</h3>
+                <p>
+                    Records, spreadsheets, reports and simple systems.
+                </p>
             </div>
 
+            <div class="client-card">
+                <span>04</span>
+                <h3>Households</h3>
+                <p>
+                    TV mounting, Wi-Fi, laptops, electronics and appliances.
+                </p>
+            </div>
 
-            <div class="w3-quarter feature-column">
+            <div class="client-card">
+                <span>05</span>
+                <h3>Clinics & Hospitality</h3>
+                <p>
+                    Networking, websites, CCTV and business records.
+                </p>
+            </div>
 
-                <div class="feature-card">
-
-                    <span>04</span>
-
-                    <h3>Professional</h3>
-
-                    <p>
-                        Clear communication, proper documentation
-                        and accountable service delivery.
-                    </p>
-
-                </div>
-
+            <div class="client-card">
+                <span>06</span>
+                <h3>Students & Professionals</h3>
+                <p>
+                    CVs, documents, PDFs and digital skills support.
+                </p>
             </div>
 
         </div>
@@ -428,80 +646,208 @@
 </section>
 
 
-<!-- ================= PROCESS ================= -->
+<!-- =========================================================
+     HOW WE WORK
+========================================================= -->
 
-<section id="process" class="section">
+<section class="section process-section" id="process">
 
-    <div class="w3-content">
+    <div class="container">
 
         <div class="section-heading">
 
-            <span>OUR PROCESS</span>
+            <div>
+                <div class="section-label">
+                    OUR PROCESS
+                </div>
+
+                <h2>
+                    Simple process.<br>
+                    <span>Professional delivery.</span>
+                </h2>
+            </div>
+
+            <p>
+                We keep the process clear from the first message
+                to the final handover.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <span>01</span>
+                <h3>Tell Us the Problem</h3>
+                <p>
+                    Contact us through WhatsApp, phone or our enquiry form.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <span>02</span>
+                <h3>Assess & Quote</h3>
+                <p>
+                    We understand the scope, explain the solution and
+                    provide a clear quote.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <span>03</span>
+                <h3>We Come to You</h3>
+                <p>
+                    The appropriate team member or team is dispatched
+                    to your location.
+                </p>
+            </div>
+
+            <div class="process-card">
+                <span>04</span>
+                <h3>Test & Handover</h3>
+                <p>
+                    We test the work, explain what was done and
+                    complete the handover.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BUSINESS CARE
+========================================================= -->
+
+<section class="care-section">
+
+    <div class="container">
+
+        <div class="care-grid">
+
+            <div>
+
+                <div class="section-label">
+                    BUSINESS CARE
+                </div>
+
+                <h2>
+                    Don't wait for technology<br>
+                    <span>to break down.</span>
+                </h2>
+
+                <p>
+                    For businesses that need ongoing support, we offer
+                    monthly care plans covering technical health checks,
+                    remote support, backups and selected on-site services.
+                </p>
+
+            </div>
+
+
+            <div class="care-plans">
+
+                <div class="care-plan">
+
+                    <div>
+                        <h3>Basic</h3>
+                        <p>Remote support, monthly health check and backups.</p>
+                    </div>
+
+                    <strong>
+                        KES 1,500 – 2,500<span>/month</span>
+                    </strong>
+
+                </div>
+
+
+                <div class="care-plan highlighted">
+
+                    <div>
+                        <h3>Standard</h3>
+                        <p>
+                            Basic plan plus monthly on-site visit,
+                            CCTV check and Wi-Fi check.
+                        </p>
+                    </div>
+
+                    <strong>
+                        KES 3,500 – 6,000<span>/month</span>
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY KTS
+========================================================= -->
+
+<section class="section why-section">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <div class="section-label">
+                THE KTS DIFFERENCE
+            </div>
 
             <h2>
-                From problem
-                <br>
-                to solution.
+                More than a technician.<br>
+                <span>A technical team.</span>
             </h2>
 
         </div>
 
 
-        <div class="process-row">
+        <div class="why-grid">
 
-            <div class="process-step">
-
-                <div class="process-number">01</div>
-
-                <h3>Tell us</h3>
-
+            <div>
+                <strong>01</strong>
+                <h3>One Team</h3>
                 <p>
-                    Describe the problem, project or service
-                    you need.
+                    IT, software, security, electronics and installation
+                    expertise under one roof.
                 </p>
-
             </div>
 
-
-            <div class="process-step">
-
-                <div class="process-number">02</div>
-
-                <h3>We assess</h3>
-
+            <div>
+                <strong>02</strong>
+                <h3>We Come to You</h3>
                 <p>
-                    We understand the requirements and identify
-                    the right technical approach.
+                    No need to move equipment around town when the
+                    solution can come directly to you.
                 </p>
-
             </div>
 
-
-            <div class="process-step">
-
-                <div class="process-number">03</div>
-
-                <h3>We execute</h3>
-
+            <div>
+                <strong>03</strong>
+                <h3>Clear Pricing</h3>
                 <p>
-                    Our team delivers the agreed service or
-                    project professionally.
+                    Written quotes and clear scopes help you understand
+                    what you are paying for.
                 </p>
-
             </div>
 
-
-            <div class="process-step">
-
-                <div class="process-number">04</div>
-
-                <h3>We support</h3>
-
+            <div>
+                <strong>04</strong>
+                <h3>After-Service Support</h3>
                 <p>
-                    We remain available for maintenance,
-                    improvements and technical support.
+                    We document our work and provide a 30-day
+                    workmanship guarantee.
                 </p>
-
             </div>
 
         </div>
@@ -511,97 +857,244 @@
 </section>
 
 
-<!-- ================= CTA ================= -->
+<!-- =========================================================
+     CONTACT
+========================================================= -->
 
-<section id="contact" class="cta-section">
+<section class="section contact-section" id="contact">
 
-    <div class="w3-content">
+    <div class="container">
 
-        <span class="eyebrow">LET'S SOLVE IT</span>
+        <div class="contact-grid">
 
-        <h2>
-            Got a technical
-            <br>
-            problem?
-        </h2>
+            <div class="contact-info">
 
-        <p>
-            Tell KTS what you need and let's work out
-            a practical solution.
-        </p>
-
-        <div class="cta-buttons">
-
-            <!-- Replace number with actual KTS WhatsApp number -->
-            <a href="https://wa.me/254753563851"
-               class="primary-btn"
-               target="_blank">
-                WhatsApp KTS
-            </a>
-
-            <!-- Replace email -->
-            <a href="mailto:ktservicesteam@gmail.com"
-               class="secondary-btn">
-                Email Us
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="w3-content">
-
-        <div class="w3-row-padding">
-
-            <div class="w3-half">
-
-                <div class="footer-brand">
-                    <span class="brand-mark">K</span>
-
-                    <div>
-                        <strong>KTS</strong>
-                        <small>Kutus Technical Services</small>
-                    </div>
+                <div class="section-label">
+                    GET IN TOUCH
                 </div>
 
+                <h2>
+                    Have a technical<br>
+                    problem?
+                    <span>Let's solve it.</span>
+                </h2>
+
                 <p>
-                    Digital and technical solutions
-                    for a connected world.
+                    Tell us what you need. We'll assess the problem,
+                    recommend the right solution and arrange a visit
+                    where necessary.
+                </p>
+
+
+                <div class="contact-method">
+
+                    <span>WHATSAPP</span>
+
+                    <a href="https://wa.me/254753563851"
+                       target="_blank"
+                       rel="noopener">
+                        +254 753 563 851
+                    </a>
+
+                </div>
+
+
+                <div class="contact-method">
+
+                    <span>EMAIL</span>
+
+                    <a href="mailto:ktservicesteam@gmail.com">
+                        ktservicesteam@gmail.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-method">
+
+                    <span>LOCATION</span>
+
+                    <p>
+                        Kutus, Kirinyaga County, Kenya
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form"
+                  id="contactForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="07XX XXX XXX"
+                            required>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="service">
+                        Service Needed
+                    </label>
+
+                    <select
+                        id="service"
+                        name="service"
+                        required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option>Laptop / PC Support</option>
+                        <option>Wi-Fi / Networking</option>
+                        <option>Business Records</option>
+                        <option>Website / Software</option>
+                        <option>CCTV</option>
+                        <option>TV / DStv Mounting</option>
+                        <option>Electronics</option>
+                        <option>Documents / Training</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Tell us about the problem
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Briefly describe what you need help with..."
+                        required></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary form-submit">
+
+                    Send Service Request
+
+                </button>
+
+                <p class="form-note">
+                    This form opens WhatsApp with your service request.
+                </p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <img
+                    src="assets/kts-logo.png"
+                    alt="Kutus Technical Services"
+                    class="footer-logo">
+
+                <p>
+                    One trusted technical team serving Kutus
+                    and surrounding areas.
                 </p>
 
             </div>
 
 
-            <div class="w3-quarter">
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#process">How We Work</a>
+                <a href="#contact">Get a Quote</a>
+
+            </div>
+
+
+            <div>
 
                 <h4>Services</h4>
 
-                <p>Digital & Software</p>
-                <p>IT Support</p>
-                <p>Electronics & Electrical</p>
-                <p>Security & Installation</p>
+                <a href="#services">IT Support</a>
+                <a href="#services">Digital & Software</a>
+                <a href="#services">CCTV</a>
+                <a href="#services">Electronics</a>
+                <a href="#services">TV & DStv</a>
 
             </div>
 
 
-            <div class="w3-quarter">
-
-                <h4>Location</h4>
-
-                <p>Kutus, Kirinyaga</p>
-                <p>Kenya</p>
+            <div>
 
                 <h4>Contact</h4>
 
-                <p>WhatsApp: +254 753563851</p>
-                <p>Email: ktservicesteam@gmail.com</p>
+                <a href="https://wa.me/254753563851"
+                   target="_blank"
+                   rel="noopener">
+                    WhatsApp
+                </a>
+
+                <a href="mailto:ktservicesteam@gmail.com">
+                    Email
+                </a>
+
+                <span>Kutus, Kirinyaga</span>
 
             </div>
 
@@ -610,9 +1103,15 @@
 
         <div class="footer-bottom">
 
-            © <span id="year"></span>
-            Kutus Technical Services.
-            All rights reserved.
+            <p>
+                © <span id="year"></span>
+                Kutus Technical Services.
+                All rights reserved.
+            </p>
+
+            <p>
+                Tunakuja kwako. Tunatatua.
+            </p>
 
         </div>
 
@@ -621,6 +1120,7 @@
 </footer>
 
 
+<!-- JavaScript -->
 <script src="script.js"></script>
 
 </body>
